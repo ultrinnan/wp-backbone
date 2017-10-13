@@ -20,3 +20,4 @@ wp-signup.php
 wp-trackback.php
 xmlrpc.php
 !/wp-content/themes/fedirko/
+!/wp-content/plugins/fedirko/
