@@ -1,0 +1,391 @@
+@media screen and (min-width: 992px) {
+  section.second {
+    padding: 0 10px;
+  }
+  section.third .content .article p {
+    font-size: 10px;
+  }
+  section.reviews .content {
+    padding: 0 50px;
+  }
+  section.reviews .carousel1 .user-name {
+    width: 50%;
+  }
+  .main-top h1 {
+    font-size: 36px;
+    margin-top: 30px;
+  }
+  .main-top h1 + p {
+    font-size: 23px;
+    margin: 20px 0px;
+  }
+  .main-top .register {
+    padding-top: 0px;
+  }
+  .main-top address {
+    display: none;
+  }
+  section.second .ader {
+    font-size: 15px;
+  }
+  .services-page .service h5 {
+    margin: 50px 0 15px;
+  }
+  .contacts .submit {
+  	margin: 15px auto;
+    display: block;
+  }
+  
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) { 
+	.salon-photo-block div img {
+		float: none;
+	}
+	.salon-photo-block div {
+	    text-align: center;
+    }
+    .salon-photo-block div:first-child img {
+		width: 25%;
+		vertical-align: top;
+		margin-right: 0;
+	}
+}
+@media screen and (max-width: 992px) {
+  section.reviews .content {
+    padding: 0 50px;
+  }
+  .description-bottom {
+    height: auto;
+    padding: 30px 10px 20px;
+    background-size: cover;
+  }
+  footer .social-badges > div {
+    width: 44%;
+  }
+  footer .social-badges > div img {
+    width: 100%;
+  }
+  footer {
+    height: 100%;
+    background-size: cover;
+    padding-bottom: 20px;
+  }
+  section.reviews .carousel1 .user-name {
+    width: 100%;
+    text-align: center;
+    background-position: 50% 100%;
+  }
+  section.reviews .carousel1 img {
+    float: none;
+    margin: 0 auto;
+  }
+  section.third .content .article p {
+    font-size: 13px;
+  }
+  section.second {
+    height: auto;
+    background-size: cover;
+    padding: 0px 10px 20px;
+    display: inline-block;
+  }
+  section.second .ader {
+    width: 50%;
+    margin-bottom: 20px;
+    padding: 120px 0px 0px;
+    background-position: 50% 20%;
+  }
+  section.second .ader:nth-child(8) {
+    width: 100%;
+  }
+  .register .but-tn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .main-top address p {
+    margin-bottom: 20px;
+  }
+  .main-top h1 {
+    margin-top: 20px;
+  }
+  header .main-nav {
+    max-width: 550px;
+  }
+  header .main-nav li a {
+    font-size: 15px;
+  }
+  .about-salon img {
+    margin-bottom: 20px;
+  }
+  .services-page .service img {
+    width: 50%;
+    height: auto;
+  }
+  .services-page .service h5 {
+    margin: 30px 0 15px;
+  }
+  .services-page .service a {
+    margin-top: 10px;
+  }
+  .services-page .service p {
+    font-size: 12px;
+  }
+  .publications-page .article {
+    min-height: 495px;
+  }
+  .time {
+    width: auto;
+  }
+  .new-salon-page .row > div:first-child {
+    padding-right: 10px;
+  }
+  .new-salon-page .row > div:last-child {
+    padding-left: 10px;
+  }
+  .contacts .submit {
+  	margin: 15px auto;
+    display: block;
+  }
+}
+@media screen and (max-width: 767px) {
+  .breadcrumbs {
+    margin-top: 50px;
+  }
+  header {
+    height: 50px;
+  }
+  header .right-btn {
+    height: 50px;
+    font-size: 10px;
+    width: 50px;
+  }
+  header .left-btn {
+    height: 50px !important;
+    padding-top: 30px !important;
+    background-position: 50% 20% !important;
+    width: 50px;
+    font-size: 10px;
+  }
+  header .logo {
+    margin: 0px auto !important;
+    width: 60px !important;
+    line-height: 10px !important;
+    position: static;
+  }
+  header .main-nav {
+    display: none;
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background: rgba(199, 50, 108, 0.97);
+    top: 0;
+    left: 0;
+    margin: 0 !important;
+  }
+  header .main-nav li {
+    float: none;
+    margin: 30px 10px;
+    text-align: left;
+  }
+  header .main-nav li:first-child {
+    display: block;
+    margin: 0;
+  }
+  #close-mob {
+    text-align: right;
+    font-size: 36px;
+    text-transform: lowercase;
+    padding-right: 12px;
+  }
+  header .main-nav li a {
+    color: white;
+    display: block;
+  }
+  header #mob-menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 18px;
+    text-transform: uppercase;
+    width: 120px;
+    font-size: 10px;
+    color: #3a3a40;
+  }
+  .main-top {
+    margin-top: 50px;
+  }
+  .main-top .row > div:first-child {
+    padding-left: 15px;
+    height: auto !important;
+  }
+  .main-top h1 {
+    font-size: 29px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .main-top h1 + p {
+    font-size: 22px;
+    margin: 15px 0px 25px;
+    text-align: center;
+  }
+  .main-top .register,
+  .main-top address {
+    display: none;
+  }
+  .main-top .action-link {
+    padding-right: 0;
+    text-align: center;
+  }
+  .social-badges {
+    display: none;
+  }
+  section.third > div {
+    height: auto;
+  }
+  section.reviews .content {
+    padding: 0 50px;
+  }
+  .main.center .center-bottom span {
+    line-height: 1.3;
+  }
+  .main.center .center-bottom table tr td:first-child {
+    background-position: 0% 19%;
+  }
+  .main.center .center-bottom > div {
+    padding: 0;
+  }
+  .main.center .center-top > div {
+    border-top: none;
+  }
+  .main.center .center-top > div {
+    border-right: none;
+  }
+  .services-page .service {
+    background-size: cover !important;
+    background-position: 50% 50% !important;
+  }
+  .services-page .service div {
+    width: 100%;
+    padding: 0 10px 20px;
+  }
+  .services-page .service h5 {
+    margin: 30px 0 15px;
+  }
+  .services-page .service img {
+    width: 100%;
+    height: auto;
+  }
+  .info-box img {
+    width: 50%;
+  }
+  .info-box .but-tn {
+    margin: 35px auto;
+    display: block;
+    width: 236px;
+  }
+  .info-box h6 + p {
+    padding: 0 10px;
+  }
+  .diplomas-box {
+    text-align: center;
+  }
+  .masters-page h6 {
+    text-align: center;
+  }
+  .short {
+    width: 80%;
+    margin: 0px auto;
+  }
+  .time {
+    font-size: 17px;
+    float: none;
+    width: 100%;
+    padding: 13px 0 13px 60px;
+    clear: both;
+  }
+  .clock {
+    background-position: 10px 50%;
+  }
+  .master {
+    margin-bottom: 30px;
+  }
+  .salon-photo-block div:first-child img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  img.no-margin,
+  .salon-photo-block div:last-child img {
+    width: 50% !important;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+  .contacts .row > div:last-child {
+  	padding-top: 20px;
+  }
+  .left-panel {
+    padding-top: 90px;
+  }
+  #close-panel {
+    top: 60px;
+  }
+  footer .policy p {
+    text-align: center;
+    font-size: 13px;
+  }
+  footer .contacts,
+  footer h4 {
+    text-align: center;
+  }
+  footer address p {
+    font-size: 13px;
+    text-align: center;
+    background: none;
+    padding: 0;
+  }
+  footer .policy a {
+    display: block;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  section.second .ader {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 120px 0px 0px;
+    background-position: 50% 20%;
+  }
+  .main.center .center-top > div {
+    padding: 0;
+  }
+  .main.center .dct {
+    float: right;
+    padding-top: 5px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    background: rgba(250, 250, 250, 0.3);
+  }
+  .main.center .dct a {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  section.reviews .carousel1 .user-name {
+    width: 100%;
+    text-align: center;
+    background-position: 50% 100%;
+  }
+  section.reviews .carousel1 img {
+    float: none;
+    margin: 0 auto;
+  }
+  .contacts #capture {
+  	width: 80px; 
+  }
+}
