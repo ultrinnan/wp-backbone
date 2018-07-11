@@ -21,3 +21,4 @@ wp-trackback.php
 xmlrpc.php
 !/wp-content/themes/fedirko/
 !/wp-content/plugins/f-*
+!/wp-content/themes/makeup/
