@@ -1,0 +1,17 @@
+define( 'FS_METHOD','direct' );
+
+//infopulse developer env checker: if test servers - enable all debugging
+if ($_SERVER['HTTP_HOST'] === 'wordpress.local'){
+    define('WP_IP_DEV_ENV', true);//const for checking in code and disable some parts of code (scripts etc.)
+    define( 'WP_DEBUG', true );
+    define( 'WP_DEBUG_LOG', true );// Enable Debug logging to the /wp-content/debug.log file
+    define( 'WP_DEBUG_DISPLAY', true );// Disable display of errors and warnings
+    define( 'SCRIPT_DEBUG', true );// Use dev versions of core JS and CSS files (needed if you are modifying these core files)
+} else {
+    define('WP_IP_DEV_ENV', false);
+    define( 'WP_DEBUG', false );
+    define( 'WP_DEBUG_LOG', true );
+    define( 'WP_DEBUG_DISPLAY', false );
+    @ini_set( 'display_errors', 0 );
+    define( 'SCRIPT_DEBUG', false );
+}

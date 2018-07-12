@@ -214,12 +214,12 @@
 }
 
 /* Effect 17: move up fade out, push border */
-.cl-effect-17 a {
+.menu-item a {
   text-shadow: none;
   padding: 10px 0;
   position: relative;
 }
-.cl-effect-17 a::after {
+.menu-item a::after {
   content: '';
   position: absolute;
   left: 0;
@@ -236,8 +236,9 @@
   transition: transform 0.3s, opacity 0.3s;
   pointer-events: none;
 }
-.cl-effect-17 a:hover::after,
-.cl-effect-17 a:focus::after {
+.menu-item a:hover::after,
+.current-menu-item a::after,
+.menu-item a:focus::after {
   opacity: 1;
   -webkit-transform: translateY(0px);
   -moz-transform: translateY(0px);

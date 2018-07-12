@@ -32,14 +32,11 @@
 			<?php get_search_form(); ?>
 		</div>
 		<a href="<?=get_home_url();?>" class="logo"><img src="<?php bloginfo('template_url'); ?>/images/main-logo.png" alt=""></a>
-		<ul class="main-nav">
-			<li><a id="close-mob" href="#">x</a></li>
-			<li class="cl-effect-17"><a href="/o-salone/">о нас</a></li>
-			<li class="cl-effect-17"><a href="/nashi-mastera/">наши мастера</a></li>
-			<li class="cl-effect-17"><a href="/galereya-fotografij/">фотогалерея</a></li>
-			<li class="cl-effect-17"><a href="/prajs/">цены</a></li>
-			<li class="cl-effect-17"><a href="/kontakty/">контакты</a></li>
-		</ul>
+        <?php wp_nav_menu([
+            'theme_location' => 'header',
+            'menu_class' => 'main-nav',
+            'container' => false,
+        ]);?>
 	</header>
 	<?php
 		if (!is_front_page()) echo '<div class="breadcrumbs"><a href="/index.php">главная ></a></div>';

@@ -78,7 +78,8 @@ header .logo img {
 }
 header .main-nav {
   max-width: 595px;
-  display: block;
+  display: flex;
+  justify-content: center;
   margin: 0 auto;
   height: 17px;
 }
