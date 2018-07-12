@@ -1110,6 +1110,26 @@ display:none;}
 .wds_right_btn_con, .wds_left_btn_cont{
   display: none;
 }
+
+.panel-group li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  padding: 14px 15px;
+  color: inherit;
+}
+.panel-group li a:hover,
+.panel-group .current-menu-item a,
+.panel-group li a:focus{
+  background: pink;
+}
+.panel-group li a:hover::after,
+.panel-group .current-menu-item a::after,
+.panel-group li a:focus::after{
+  display: none;
+}
+
+
 @media screen and (max-width: 1280px) {
   .short {
     width: 94%;

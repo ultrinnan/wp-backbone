@@ -16,15 +16,6 @@ $(document).ready(function() {
     	// sliderBoxResize();
     });
 
-    $(function() {
-        $('#ei-slider').eislideshow({
-			animation			: 'center',
-			autoplay			: true,
-			slideshow_interval	: 5000,
-			titlesFactor		: 0
-        });
-    });
-
 	// Carousel home-page
     $('.carousel1').owlCarousel({
 		nav: true,
