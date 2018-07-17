@@ -26,12 +26,12 @@
 <body class="flowered">
 	<header>
 		<a href="#" id="mob-menu">меню сайта</a>
-		<a href="#" class="left-btn pull-left">услуги</a>
+		<a href="#" class="left-btn pull-left"></a>
 		<a href="#" class="right-btn pull-right"></a>
 		<div class="search-box">
 			<?php get_search_form(); ?>
 		</div>
-		<a href="<?=get_home_url();?>" class="logo"><img src="<?php bloginfo('template_url'); ?>/images/main-logo.png" alt=""></a>
+		<a href="<?=get_home_url();?>" class="logo">MakeUp by Margaret</a>
         <?php wp_nav_menu([
             'theme_location' => 'header',
             'menu_class' => 'main-nav',

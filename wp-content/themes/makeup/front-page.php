@@ -88,8 +88,7 @@
 					</tr>
 				</table>
 			</div>-->
-			<div class="col-sm-12 col-md-12 anim fadeInUp">
-                <div class="uslugi">
+			<div class="col-sm-12 col-md-12 anim fadeInUp services">
 
 				<h6>Услуги визажиста и бровиста</h6>
 				<table class="table">
@@ -114,7 +113,7 @@
 						<td>100 грн.</td>
 					</tr>
 				</table>
-                </div>
+
 			</div>
 			<!--<div class="col-sm-4 col-md-4 anim fadeInUp">
 				<img src="<?php bloginfo('template_url'); ?>/images/bg-img6.jpg" alt="">
