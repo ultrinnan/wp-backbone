@@ -70,7 +70,11 @@ header .right-btn {
 header .logo {
   display: block;
   margin: 16px auto;
-  width: 368px;
+  color: #f06c00;
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 header .logo img {
   width: 100%;
@@ -285,10 +289,10 @@ a.but-tn:hover {
 #icppreloader {
   display: none;
 }
-.uslugi {
+.services {
   margin-left: auto;
   margin-right: auto;
-  
+  text-align: center;
 }
 
 @media (min-width: 992px) and (max-width: 1850px) {
@@ -319,12 +323,7 @@ a.but-tn:hover {
   padding: 0;
   padding-right: 30px;
 }
-.main.center .center-bottom > div:first-child table tr td:first-child {
-  width: 10%;
-}
-.main.center .center-bottom > div:first-child table tr td:last-child {
-  width: 33%;
-}
+
 .main.center .center-bottom img {
   width: 100%;
   height: auto;
@@ -342,19 +341,20 @@ a.but-tn:hover {
   padding: 5px 0;
 }
 table.table {
-  width: 100%;
+  width: 60%;
+  margin: auto;
 }
 table.table tr {
   font-size: 13px;
 }
 table.table tr td:first-child {
-  width: 70%;
+  width: 90%;
   position: relative;
   padding-bottom: 20px;
   background: url(../images/point-bg.jpg) 0% 14% repeat-x;
 }
 table.table tr td:last-child {
-  width: 30%;
+  width: 10%;
   padding-left: 15px;
 }
 table.table p {
