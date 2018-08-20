@@ -58,101 +58,41 @@
 			</div>
 		</div>
 		<div class="row center-bottom">
-            <!--<div class="col-sm-4 col-md-4 anim fadeInUp">
-				<img src="<?php bloginfo('template_url'); ?>/images/bg-img4.png" alt="">
-				<h6>маникюр и педикюр</h6>
-				<table class="table">
-					<tr>
-						<td><span>Покрытие гель-лаком</span><br><em>(Kodi, IBD, Gelish, Koto, G.la Color, EzFlow, Naomi)</em></td>
-						<td><p>Однотонное 130 грн. Френч 150 грн.</p></td>
-					</tr>
-					<tr>
-						<td><span>Покрытие гель-лаком Кошачий глаз</span></td>
-						<td><p>10 ногтей – 180 грн. 1 ноготь – 15 грн.</p></td>
-					</tr>
-					<tr>
-						<td><span>Укрепление ногтей CND Brisa Lite</span><br><em>(без покрытия)</em></td>
-						<td><p>150 грн.</p></td>
-					</tr>
-					<tr>
-						<td><span>Укрепление ногтей GelishHarmony </span><br><em>(без покрытия)</em></td>
-						<td><p>100 грн.</p></td>
-					</tr>
-					<tr>
-						<td><span>Снятие гель-лака <em>(в т.ч.Shellac)</em></span></td>
-						<td><p>50 грн. / 40 грн. (при покрытии)</p></td>
-					</tr>
-					<tr>
-						<td><span>Покрытие ногтей Vinylux</span></td>
-						<td><p>60 грн. </p></td>
-					</tr>
-				</table>
-			</div>-->
 			<div class="col-sm-12 col-md-12 anim fadeInUp services">
 
 				<h6>Услуги визажиста и бровиста</h6>
-				<table class="table">
-					<tr>
-						<td><span>Наращивание ресниц поштучно</span><br><em>(материалы премиум класса Vivienne Kodi)</em></td>
-						<td>360 грн.</td>
-					</tr>
-					<tr>
-						<td><span>Extra Volume: Двойное тройное наращивание</span><br>(2D или 3D эффект)</td>
-						<td>600 грн.</td>
-					</tr>
-					<tr>
-						<td><span>Нижнее наращивание ресниц. Коррекция</span></td>
-						<td>130 грн.</td>
-					</tr>
-					<tr>
-						<td><span>Коррекция ресниц до 3 недель</span></td>
-						<td>200 грн.</td>
-					</tr>
-					<tr>
-						<td><span>Снятие ресниц</span></td>
-						<td>100 грн.</td>
-					</tr>
-				</table>
+                <?php $price = get_page_by_path('price');
+                if ($price) {
+                    echo $price->post_content;
+                } else {
+                    echo 'Please create page with path "price"';
+                }
+                ?>
+<!--				<table class="table">-->
+<!--					<tr>-->
+<!--						<td><span>Наращивание ресниц поштучно</span><br><em>(материалы премиум класса Vivienne Kodi)</em></td>-->
+<!--						<td>360 грн.</td>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><span>Extra Volume: Двойное тройное наращивание</span><br>(2D или 3D эффект)</td>-->
+<!--						<td>600 грн.</td>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><span>Нижнее наращивание ресниц. Коррекция</span></td>-->
+<!--						<td>130 грн.</td>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><span>Коррекция ресниц до 3 недель</span></td>-->
+<!--						<td>200 грн.</td>-->
+<!--					</tr>-->
+<!--					<tr>-->
+<!--						<td><span>Снятие ресниц</span></td>-->
+<!--						<td>100 грн.</td>-->
+<!--					</tr>-->
+<!--				</table>-->
 
 			</div>
-			<!--<div class="col-sm-4 col-md-4 anim fadeInUp">
-				<img src="<?php bloginfo('template_url'); ?>/images/bg-img6.jpg" alt="">
-				<h6>косметология</h6>
-				<table class="table">
-					<tr>
-						<td><span>Руки до локтя</span></td>
-						<td>80 грн.</td>
-					</tr>
-					<tr>
-						<td><span>Руки полностью</span></td>
-						<td>100 грн.</td>
-					</tr>
-					<tr>
-						<td><span>Ноги до колена</span></td>
-						<td>100 грн.</td>
-					</tr>
-					<tr>
-						<td><span>Ноги выше колена</span></td>
-						<td>130 грн.</td>
-					</tr>
-					<tr>
-						<td><span>Ноги полностью</span></td>
-						<td>230 грн.</td>
-					</tr>
-					<tr>
-						<td><span>Зона бикини</span></td>
-						<td>150 грн.</td>
-					</tr>
-					<tr>
-						<td><span>Глубокое бикини</span></td>
-						<td>200 грн.</td>
-					</tr>
-				</table>
-			</div>-->
 		</div> <!-- center-bottom -->
-		<div class="but-block">
-			<a href="/prajs/" class="but-tn">услуги и цены</a>
-		</div>
 	</div> <!-- main-center -->
 	<section class="second">
 		<h2 class="anim slideInLeft">MakeUp by Margaret это:</h2>
@@ -226,7 +166,12 @@
 		</div>
 		<div class="but-block">
 			<a href="/feedback/" class="but-tn">больше отзывов</a>
-			<a href="/feedback/"> <button class="but-tn">добавить отзыв</button></a>
+            <?php
+                if (!get_page_by_path('send-feedback')){
+                    echo '<p>Please create page with path "send-feedback" and template "Feedback form"</p>';
+                }
+            ?>
+			<a href="/send-feedback/"> <button class="but-tn">добавить отзыв</button></a>
 		</div>
 	</section> <!-- reviews -->
 

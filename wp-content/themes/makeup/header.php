@@ -25,8 +25,6 @@
 </head>
 <body class="flowered">
 	<header>
-		<a href="#" id="mob-menu">меню сайта</a>
-		<a href="#" class="left-btn pull-left"></a>
 		<a href="#" class="right-btn pull-right"></a>
 		<div class="search-box">
 			<?php get_search_form(); ?>

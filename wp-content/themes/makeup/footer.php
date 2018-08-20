@@ -17,33 +17,10 @@
 					</div>
 				</div>
 				<div class="col-sm-7 col-md-7 social-badges">
-					<div class="vk">
-					</div>
-					<div class="goo">
-						<style>
-							.g-page {
-								width: 250px;
-
-							}
-						</style>
-						<div class="g-page" data-width="250" data-href="https://plus.google.com/110725819932904081488" data-theme="dark" data-rel="publisher"></div>
-					</div>
 				</div>
 			</div>
 		</div>
 	</footer> <!-- footer -->
-
-	<div class="modal"></div>
-	<div class="left-panel">
-		<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-			<a href="#" id="close-panel"></a>
-		</div>
-        <?php wp_nav_menu([
-            'theme_location' => 'side',
-            'menu_class' => 'panel-group',
-            'container' => false,
-        ]);?>
-	</div> <!-- .left-panel -->
 	<?php wp_footer(); ?>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
