@@ -60,7 +60,7 @@
 		<div class="row center-bottom">
 			<div class="col-sm-12 col-md-12 anim fadeInUp services">
 
-				<h6>Услуги визажиста и бровиста</h6>
+				<h6><?=__('Услуги визажиста и бровиста');?></h6>
                 <?php $price = get_page_by_path('price');
                 if ($price) {
                     echo $price->post_content;
@@ -129,51 +129,50 @@
 	</section> <!-- third -->
 
 	<section class="reviews">
-		<h2>Лучшие отзывы</h2>
-		<div class="content">
+		<h2><?=__('Последние отзывы');?></h2>
+        <?php
+        $feedbacks = new WP_Query([
+            'post_type' => 'feedbacks',
+            'posts_per_page' => 6,
+        ]);
+
+        if ( $feedbacks->have_posts() ) {
+            $f_row = '';
+            while ( $feedbacks->have_posts() ) {
+                $feedbacks->the_post();
+
+                $f_thumbnail = has_post_thumbnail() ? get_the_post_thumbnail_url() : '';
+                $f_title = get_the_title();
+                $f_text = get_the_excerpt();
+
+                $f_row .= <<<ROW
+<div class="item">
+    <img src="$f_thumbnail" alt="$f_title">
+    <p class="user-name">$f_title<br></p>
+    <p class="quote">$f_text</p>
+</div>
+ROW;
+            }
+        }
+        //restore original post data
+        wp_reset_postdata();
+        ?>
+        <div class="content">
 			<div class="carousel1">
-			<div class="item">
-				<img src="<?php bloginfo('template_url'); ?>/images/user1-img.png" alt="">
-				<p class="user-name">Виктория <br><span>постоянный клиент</span></p>
-				<p class="quote">Следует, однако забывать, что реализация намеченных плановых заданий позволяет оценить значение соответствующий условий активизации. С другой стороны рамки и место обучения.</p>
-			</div>
-			<div class="item">
-				<img src="<?php bloginfo('template_url'); ?>/images/user2-img.png" alt="">
-				<p class="user-name">Кристина <br><span>новый клиент</span></p>
-				<p class="quote">Следует, однако забывать, что реализация намеченных плановых заданий позволяет оценить значение соответствующий условий активизации.</p>
-			</div>
-			<div class="item">
-				<img src="<?php bloginfo('template_url'); ?>/images/user3-img.png" alt="">
-				<p class="user-name">Марианна <br><span>посетитель</span></p>
-				<p class="quote">Следует, однако забывать, что реализация намеченных плановых заданий позволяет оценить значение соответствующий условий активизации. С другой стороны рамки и место обучения.</p>
-			</div>
-			<div class="item">
-				<img src="<?php bloginfo('template_url'); ?>/images/user1-img.png" alt="">
-				<p class="user-name">Виктория <br><span>постоянный клиент</span></p>
-				<p class="quote">Следует, однако забывать, что реализация намеченных плановых заданий позволяет оценить значение соответствующий условий активизации. С другой стороны рамки и место обучения.</p>
-			</div>
-			<div class="item">
-				<img src="<?php bloginfo('template_url'); ?>/images/user2-img.png" alt="">
-				<p class="user-name">Кристина <br><span>новый клиент</span></p>
-				<p class="quote">Следует, однако забывать, что реализация намеченных плановых заданий позволяет оценить значение соответствующий условий активизации.</p>
-			</div>
-			<div class="item">
-				<img src="<?php bloginfo('template_url'); ?>/images/user3-img.png" alt="">
-				<p class="user-name">Марианна <br><span>посетитель</span></p>
-				<p class="quote">Следует, однако забывать, что реализация намеченных плановых заданий позволяет оценить значение соответствующий условий активизации. С другой стороны рамки и место обучения.</p>
-				</div>
+			<?=$f_row;?>
 		</div>
 		</div>
-		<div class="but-block">
-			<a href="/feedback/" class="but-tn">больше отзывов</a>
+        <div class="but-block">
             <?php
-                if (!get_page_by_path('send-feedback')){
-                    echo '<p>Please create page with path "send-feedback" and template "Feedback form"</p>';
-                }
+            if (!get_page_by_path('feedback')){
+                echo '<p>Please create page with path "feedback" and template "Feedback page"</p>';
+            } else {
+                echo '<a href="/feedback/" class="but-tn">больше отзывов</a>';
+                echo '<a href="/feedback#send_form/" class="but-tn">добавить отзыв</a>';
+            }
             ?>
-			<a href="/send-feedback/"> <button class="but-tn">добавить отзыв</button></a>
-		</div>
-	</section> <!-- reviews -->
+        </div>
+    </section> <!-- reviews -->
 
 	<div class="description-bottom">
 		<div class="content">

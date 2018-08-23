@@ -1,4 +1,8 @@
-<?php get_header(); ?>
+<?php
+/*
+Template Name: Feedback page
+ */
+get_header(); ?>
     <div class="container">
         <div class="row">
             <div class="col-md-12">
