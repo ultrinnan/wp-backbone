@@ -106,25 +106,22 @@
 	</section> <!-- second -->
 
 	<section class="third">
-		<h2>Свежие публикации</h2>
-		<div>
+		<h2><?=__('Свежие работы')?></h2>
+		<div class="row">
 			<div class="content">
-			<?php $posts = get_posts ("category=news&orderby=date&numberposts=6"); ?>
+                <div class="articles">
+                <?php $posts = get_posts ("category=news&orderby=date&numberposts=6"); ?>
 			<?php foreach ($posts as $post) : ?>
-				<div class="col-sm-4 col-md-4 articles">
-				<div class="article">
-					<a href="<?php the_permalink(); ?>">
-					<?php the_post_thumbnail(); ?>
-					<?php //the_excerpt(); //превью?>						
-					<p class="title"><?php the_title(); ?></p>
-					</a>
-				</div>				
-				</div>
+                    <div class="article">
+                        <a href="<?php the_permalink(); ?>">
+                        <?php the_post_thumbnail(); ?>
+                        <?php //the_excerpt(); //превью?>
+                        <p class="title"><?php the_title(); ?></p>
+                        </a>
+                    </div>
 			<?php endforeach; ?>
-				<div class="stars-holder">
-					<img src="<?php bloginfo('template_url'); ?>/images/stars.png" alt="">
-				</div>
-			</div>
+                </div>
+            </div>
 		</div>
 	</section> <!-- third -->
 
@@ -168,7 +165,7 @@ ROW;
                 echo '<p>Please create page with path "feedback" and template "Feedback page"</p>';
             } else {
                 echo '<a href="/feedback/" class="but-tn">больше отзывов</a>';
-                echo '<a href="/feedback#send_form/" class="but-tn">добавить отзыв</a>';
+                echo '<a href="/feedback/#send_form" class="but-tn">добавить отзыв</a>';
             }
             ?>
         </div>

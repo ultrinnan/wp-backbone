@@ -411,7 +411,6 @@ section.second .ader:nth-child(8) {
   background: url(../images/atom-icon.png) 50% 0% no-repeat;
 }
 section.third > div {
-  height: 828px;
   width: 100%;
   background: url(../images/flow-bg.jpg);
   padding-top: 30px;
@@ -433,8 +432,12 @@ section.third .content .stars-holder {
 }
 .articles {
   padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .article {
+  width: 30%;
   padding: 1px 1px 28px;
   background: white;
   border-radius: 4px;
@@ -1129,6 +1132,46 @@ display:none;}
   display: none;
 }
 
+.f_row{
+    display: flex;
+    padding: 16px 0;
+}
+.f_image{
+    margin-right: 24px;
+}.f_image img{
+    width: 200px;
+    border-radius: 50%;
+}
+.f_title{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 24px 0;
+}
+.f_text{
+    text-align: left;
+}
+
+#send_form{
+  padding: 80px 0;
+  width: 50%;
+  margin: auto;
+}
+#send_form h2{
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+#send_form label,
+#send_form label input,
+#send_form label textarea{
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.submit_form{
+
+}
 
 @media screen and (max-width: 1280px) {
   .short {
