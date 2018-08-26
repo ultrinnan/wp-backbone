@@ -1,32 +1,33 @@
 <?php get_header(); ?>
 	<div class="container-fluid main-top">
 		<div class="row">
+            <div class="col-md-8" id="main-slider">
+                <div class="wrapper">
+                    <div id="ei-slider" class="ei-slider">
+                        <?php
+                        echo do_shortcode('[smartslider3 slider=1]');
+                        ?>
+                    </div><!-- ei-slider -->
+                </div><!--  wrapper -->
+            </div>
 			<div class="col-md-4">
-				<h1 class="anim fadeInLeft">MakeUp by Margaret</h1>
-				<p class="anim fadeInLeft" data-wow-delay="1s">Красота в удовольствие</p>
-				<address class="anim fadeInLeft" data-wow-delay="1.5s">
+				<h1 class="anim fadeInRight">MakeUp by Margaret</h1>
+				<p class="anim fadeInRight" data-wow-delay="1s">Красота в удовольствие</p>
+				<address class="anim fadeInRight" data-wow-delay="1.5s">
 					<!--<p>г. Киев, проспект Краснозвездный<br>119 оф. 144 (метро Демеевская)</p>-->
-					<p>г. Киев, бул. Леси Украинки, 3 оф 127<br>(метро Кловская)</p>
+					<p>г. Киев, ул. Щербакова<br>(метро Нивки)</p>
 				</address>
 				<div class="register anim fadeInUp" data-wow-delay="2s">
 					<p>Запись по телефонам</p>
-					<p><strong>(095)</strong> 700-30-37;</p>
-					<p><strong>(096)</strong> 325-13-85;</p>
+					<p><strong>(093)</strong> 343-81-40 (viber)</p>
+					<p><strong>(097)</strong> 466-25-50</p>
                     <!--	<p><strong>(063)</strong> 985-09-92;</p>
                         <p><strong>(044)</strong> 246-41-61;</p> -->
 					<a href='/zapis-onlajn/'><button class="but-tn">записаться онлайн</button></a>
 				</div>
-				<a href="/akcii-i-skidki/" class="action-link">акции и скидки ></a>
+<!--				<a href="/akcii-i-skidki/" class="action-link">акции и скидки ></a>-->
 			</div>
-			<div class="col-md-8" id="main-slider">
-				<div class="wrapper">
-	               <div id="ei-slider" class="ei-slider">
-		               <?php
-                            echo do_shortcode('[smartslider3 slider=1]');
-		               ?>
-	                </div><!-- ei-slider -->
-                </div><!--  wrapper -->
-			</div>
+
 		</div>
 	</div> <!-- main-top -->
 
@@ -57,10 +58,13 @@
 				<a href="/obuchenie/" class="full-box"></a>
 			</div>
 		</div>
-		<div class="row center-bottom">
-			<div class="col-sm-12 col-md-12 anim fadeInUp services">
 
-				<h6><?=__('Услуги визажиста и бровиста');?></h6>
+	</div> <!-- main-center -->
+    <section class="first">
+        <div class="row center-bottom">
+            <div class="col-sm-12 col-md-12 anim fadeInUp services">
+
+                <h6><?=__('Услуги визажиста и бровиста');?></h6>
                 <?php $price = get_page_by_path('price');
                 if ($price) {
                     echo $price->post_content;
@@ -68,41 +72,41 @@
                     echo 'Please create page with path "price"';
                 }
                 ?>
-<!--				<table class="table">-->
-<!--					<tr>-->
-<!--						<td><span>Наращивание ресниц поштучно</span><br><em>(материалы премиум класса Vivienne Kodi)</em></td>-->
-<!--						<td>360 грн.</td>-->
-<!--					</tr>-->
-<!--					<tr>-->
-<!--						<td><span>Extra Volume: Двойное тройное наращивание</span><br>(2D или 3D эффект)</td>-->
-<!--						<td>600 грн.</td>-->
-<!--					</tr>-->
-<!--					<tr>-->
-<!--						<td><span>Нижнее наращивание ресниц. Коррекция</span></td>-->
-<!--						<td>130 грн.</td>-->
-<!--					</tr>-->
-<!--					<tr>-->
-<!--						<td><span>Коррекция ресниц до 3 недель</span></td>-->
-<!--						<td>200 грн.</td>-->
-<!--					</tr>-->
-<!--					<tr>-->
-<!--						<td><span>Снятие ресниц</span></td>-->
-<!--						<td>100 грн.</td>-->
-<!--					</tr>-->
-<!--				</table>-->
+<!--                				<table class="table">-->
+<!--                					<tr>-->
+<!--                						<td><span>Наращивание ресниц поштучно</span><br><em>(материалы премиум класса Vivienne Kodi)</em></td>-->
+<!--                						<td>360 грн.</td>-->
+<!--                					</tr>-->
+<!--                					<tr>-->
+<!--                						<td><span>Extra Volume: Двойное тройное наращивание</span><br>(2D или 3D эффект)</td>-->
+<!--                						<td>600 грн.</td>-->
+<!--                					</tr>-->
+<!--                					<tr>-->
+<!--                						<td><span>Нижнее наращивание ресниц. Коррекция</span></td>-->
+<!--                						<td>130 грн.</td>-->
+<!--                					</tr>-->
+<!--                					<tr>-->
+<!--                						<td><span>Коррекция ресниц до 3 недель</span></td>-->
+<!--                						<td>200 грн.</td>-->
+<!--                					</tr>-->
+<!--                					<tr>-->
+<!--                						<td><span>Снятие ресниц</span></td>-->
+<!--                						<td>100 грн.</td>-->
+<!--                					</tr>-->
+<!--                				</table>-->
 
-			</div>
-		</div> <!-- center-bottom -->
-	</div> <!-- main-center -->
+            </div>
+        </div> <!-- center-bottom -->
+    </section>
 	<section class="second">
-		<h2 class="anim slideInLeft">MakeUp by Margaret это:</h2>
-		<div class="ader anim flipInX" data-wow-delay="0.5s">высокий<br>уровень<br>обслуживания</div>
-		<div class="ader anim flipInX" data-wow-delay="1s">качественная<br>косметика</div>
-		<div class="ader anim flipInX" data-wow-delay="1.5s">удобное<br>расположение</div>
-		<div class="ader anim flipInX" data-wow-delay="2s">доступные<br>цены</div>
-		<div class="ader anim flipInX" data-wow-delay="2.5s">выезд<br>мастера<br>на дом</div>
-		<!--<div class="ader anim flipInX" data-wow-delay="3s">школа подготовки<br>мастеров</div>-->
-		<div class="ader anim flipInX" data-wow-delay="3s">новые<br>технологии и<br>тренды</div>
+		<h2 class="anim slideInLeft">Используемая косметика</h2>
+		<div class="ader anim flipInX" data-wow-delay="0.5s"></div>
+		<div class="ader anim flipInX" data-wow-delay="1s"></div>
+		<div class="ader anim flipInX" data-wow-delay="1.5s"></div>
+		<div class="ader anim flipInX" data-wow-delay="2s"></div>
+		<div class="ader anim flipInX" data-wow-delay="2.5s"></div>
+		<div class="ader anim flipInX" data-wow-delay="3s"></div>
+        <div class="ader anim flipInX" data-wow-delay="3.5s"></div>
 	</section> <!-- second -->
 
 	<section class="third">
@@ -174,7 +178,12 @@ ROW;
 	<div class="description-bottom">
 		<div class="content">
 			<section style="line-height: 20px">
-			<p>Макияж позволяет скрыть некоторые недостатки кожи, визуально скорректировать форму лица с помощью техники контурирования. В зависимости от типа внешности в макияже различают палитры цветов. Например, для типа внешности Лето показаны серо-розовые и голубые тона. Правильный макияж помогает подчеркнуть красоту глаз. Макияж глаз подбирают в зависимости от цвета глаз и волос. Существует несколько разновидностей макияжа: дневной и вечерний, антивозрастной макияж, театральный. У каждого вида макияжа своя техника выполнения. Отдельная разновидность — стойкий или перманентный макияж.
+			<p>Маргарита Диненко - профессиональный визажист-стилист в Киеве.
+                На сайте представлены мои работы по визажу.
+                Всегда  профессионально подхожу к задачам.
+                Индивидуальный подход к каждому клиенту. Использую профессиональную, качественную
+                и проверенную опытом косметику MAC, The Balm, Tarte,  Make Up Atelier, Inglot, Paese, Nyx, Cascade of Colours.
+                Буду рада помочь Вам в самые важные и ответственные дни быть обворожительной, неотразимой, привлекательной, стильной, бесподобной, пленительной, сексапильной...
             </p>
 			</section>
 		</div>

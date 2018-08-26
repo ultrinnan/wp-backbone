@@ -6,9 +6,6 @@
 body {
   font-family: 'Open Sans', sans-serif;
 }
-body.flowered {
-  background: url(../images/flow-bg3.png) 0% 100px no-repeat;
-}
 strong {
   font-weight: 800;
 }
@@ -38,12 +35,11 @@ header {
   height: 100px;
   width: 100%;
   box-sizing: content-box;
-  border-bottom: 1px solid #d2d2d2;
   text-align: center;
   top: 0;
   left: 0;
   z-index: 999;
-  background: white;
+  background: #859028;
 }
 header .left-btn {
   background: url(../images/menu-icon.png) 50% 40% no-repeat;
@@ -61,16 +57,18 @@ header .left-btn:hover {
   color: #c7326c;
 }
 header .right-btn {
-  background: url(../images/search-icon.png) 50% no-repeat;
+  background: url(../images/search-icon.png) center no-repeat;
+  background-size: contain;
   display: block;
-  height: 100%;
-  width: 100px;
-  border-left: 1px solid #d2d2d2;
+  height: 34%;
+  width: 88px;
+  margin: 20px 0px;
+  opacity: 0.5;
 }
 header .logo {
   display: block;
   margin: 16px auto;
-  color: #f06c00;
+  color: #fff;
   text-decoration: none;
   font-size: 40px;
   font-weight: bold;
@@ -97,7 +95,7 @@ header .main-nav li:first-child {
 header .main-nav li a {
   padding: 0 5px;
   text-transform: uppercase;
-  color: #939393;
+  color: #fff;
 }
 header .main-nav li a:hover {
   text-decoration: none;
@@ -120,9 +118,10 @@ header #mob-menu {
   height: 20px;
   width: 170px !important;
   margin: 0 !important;
+  font-size: 21px !important;
 }
 .smaller3 {
-  margin: 28px auto 0 !important;
+  margin: 20px auto 0 !important;
 }
 .search-box {
 	position: absolute;
@@ -140,6 +139,10 @@ input[type=search] {
     outline: none;
     line-height: 33px;
 }
+.search-box {
+  padding: 16px 24px;
+  background-color: #fee54166;
+}
 #close-panel {
     display: block;
     position: absolute;
@@ -154,11 +157,11 @@ input[type=search] {
 ------------------------------------------------------------------------------------------------*/
 
 .main-top {
-  margin-top: 100px;
+  margin-top: 69px;
 }
 .main-top h1 {
   text-transform: uppercase;
-  color: #c7326c;
+  color: #f06c00;
   font-size: 50px;
   font-weight: bold;
   font-family: 'Open Sans Condensed', sans-serif;
@@ -169,8 +172,8 @@ input[type=search] {
   margin: 35px 0;
 }
 .main-top .row > div:first-child {
-  padding-left: 30px;
-  padding-bottom: 60px;
+  padding-left: 1px;
+  padding-bottom: 1px;
   position: relative;
 }
 .main-top .row > div:last-child {
@@ -213,21 +216,21 @@ input[type=search] {
   color: #c7326c;
 }
 .but-tn {
-  color: #c7326c;
+  color: #f5f5f5;
   text-transform: uppercase;
   font-weight: 600;
   padding: 0 31px;
   height: 43px;
-  border: 1px solid #e345cb;
-  border-radius: 2px;
-  box-shadow: 0px 3px 0 0 #c7326c;
-  background: white;
+  border: 1px solid #f06c00;
+  border-radius: 12px;
+  box-shadow: 0px 3px 0 0 #f06c0052;
+  background: #f06c00;
   outline: none;
   margin-top: 20px;
   margin-bottom: 10px;
 }
 .but-tn:hover {
-  box-shadow: 0 1px 0 0 #c7326c;
+  box-shadow: 0 1px 0 0 #f06c00;
   margin-top: 22px;
   margin-bottom: 8px;
 }
@@ -238,7 +241,7 @@ a.but-tn {
   font-size: 14px;
 }
 a.but-tn:hover {
-  color: #c7326c;
+  color: #f06c00;
 }
 .main.center .center-top > div {
   height: 303px;
@@ -292,7 +295,13 @@ a.but-tn:hover {
 .services {
   margin-left: auto;
   margin-right: auto;
+  /*text-align: center;*/
+}
+.services h6 {
+  text-transform: uppercase;
+  font-weight: 800;
   text-align: center;
+  margin: 40px;
 }
 
 @media (min-width: 992px) and (max-width: 1850px) {
@@ -345,16 +354,16 @@ table.table {
   margin: auto;
 }
 table.table tr {
-  font-size: 13px;
+  font-size: 100%;
 }
 table.table tr td:first-child {
-  width: 90%;
+  width: 70%;
   position: relative;
   padding-bottom: 20px;
-  background: url(../images/point-bg.jpg) 0% 14% repeat-x;
+  /*background: url(../images/point-bg.jpg) 0% 14% repeat-x;*/
 }
 table.table tr td:last-child {
-  width: 10%;
+  width: 30%;
   padding-left: 15px;
 }
 table.table p {
@@ -367,7 +376,7 @@ table.table span {
 }
 section.second {
   height: 409px;
-  background: url(../images/par-bg1.jpg);
+  background: url(../images/par-bg1.jpg) center no-repeat;
   padding: 0 80px;
 }
 section.second h2 {
@@ -387,28 +396,36 @@ section.second .ader {
   text-align: center;
   padding: 150px 0 0;
   float: left;
-  width: 16.28%;
+  width: 13.28%;
+  margin: 6px;
 }
 section.second .ader:nth-child(2) {
-  background: url(../images/prise-icon.png) 50% 0% no-repeat;
+  background: url(../images/logo/1.png) center no-repeat;
+  background-size: cover;
 }
 section.second .ader:nth-child(3) {
-  background: url(../images/mascara-icon.png) 50% 0% no-repeat;
+  background: url(../images/logo/2.png) center no-repeat;
+  background-size: contain;
 }
 section.second .ader:nth-child(4) {
-  background: url(../images/pointer2.png) 50% 0% no-repeat;
+  background: url(../images/logo/3.png) center no-repeat;
+  background-size: contain;
 }
 section.second .ader:nth-child(5) {
-  background: url(../images/dollar-icon.png) 50% 0% no-repeat;
+  background: url(../images/logo/4.png) center no-repeat;
+  background-size: contain;
 }
 section.second .ader:nth-child(6) {
-  background: url(../images/paint-icon.png) 50% 0% no-repeat;
+  background: url(../images/logo/5.png) center no-repeat;
+  background-size: contain;
 }
 section.second .ader:nth-child(7) {
-  background: url(../images/school-icon.png) 50% 0% no-repeat;
+  background: url(../images/logo/6.png) center no-repeat;
+  background-size: contain;
 }
 section.second .ader:nth-child(8) {
-  background: url(../images/atom-icon.png) 50% 0% no-repeat;
+  background: url(../images/logo/7.png) center no-repeat;
+  background-size: contain;
 }
 section.third > div {
   width: 100%;
@@ -547,7 +564,7 @@ section.reviews .carousel1 .owl-controls .owl-nav .owl-next {
   right: -46px;
 }
 .description-bottom {
-  height: 413px;
+  height: 315px;
   background: url(../images/seo-bg.jpg);
   padding-top: 60px;
   box-sizing: border-box;
@@ -562,8 +579,8 @@ section.reviews .carousel1 .owl-controls .owl-nav .owl-next {
   text-transform: uppercase;
   padding-top: 40px;
   font-size: 26px;
-  color: #c7326c;
-  background: url(../images/stars2.png) 50% 30% no-repeat;
+  color: #f06c00;
+  /*background: url(../images/stars2.png) 50% 30% no-repeat;*/
 }
 /*Salon-page
 ---------------------------------------------------------------------------------------------*/
@@ -1001,7 +1018,7 @@ img.no-margin {
 
 footer {
   height: 506px;
-  background: url(../images/footer-bg.jpg);
+  background: url(../images/flow-bg.jpg);
 }
 footer .content {
   max-width: 1030px;
@@ -1055,6 +1072,9 @@ footer .social-badges > div {
 }
 footer .social-badges > div:first-child {
   margin-right: 45px;
+}
+.insta {
+  border: 1px #000;
 }
 /* Modal
 -------------------------------------------------------------------------------------*/
