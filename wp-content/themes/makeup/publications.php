@@ -4,7 +4,7 @@ Template Name: Publications
 */
 get_header(); ?>
 	<div class="container-fluid publications-page center">
-		<h2 class="page-heading">Публикации</h2>
+		<h2 class="page-heading">Портфолио</h2>
 		<div>
 			<div class="content">
 

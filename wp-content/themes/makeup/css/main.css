@@ -79,7 +79,7 @@ header .logo img {
   height: auto;
 }
 header .main-nav {
-  max-width: 595px;
+  /*max-width: 630px;*/
   display: flex;
   justify-content: center;
   margin: 0 auto;
@@ -141,7 +141,7 @@ input[type=search] {
 }
 .search-box {
   padding: 16px 24px;
-  background-color: #fee54166;
+  background-color: #fee541;
 }
 #close-panel {
     display: block;
@@ -241,7 +241,7 @@ a.but-tn {
   font-size: 14px;
 }
 a.but-tn:hover {
-  color: #f06c00;
+  color: #fff;
 }
 .main.center .center-top > div {
   height: 303px;

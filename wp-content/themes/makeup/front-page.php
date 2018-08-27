@@ -36,26 +36,24 @@
 			<div class="col-md-4">
 				<div class="dct">
 					<h5>Акции и скидки</h5>
-					<!--<p>г. Киев, проспект Краснозвездный,<br>119 оф. 144</p>-->
-					<a href="/2015/09/2812/" class="but-tn">подробнее</a>
+					<a href="/sale/" class="but-tn">подробнее</a>
 				</div>
-				<a href="/2015/09/2812/" class="full-box"></a>
+				<a href="/sale/" class="full-box"></a>
 			</div>
 			<div class="col-md-4">
 				<div class="dct">
 					<h5>Портфолио</h5>
-					<!--<p>г. Киев, бул. Леси Украинки,<br>3 оф 127</p>-->
-					<a href="/2015/08/lesi/" class="but-tn">подробнее</a>
+					<a href="/portfolio/" class="but-tn">подробнее</a>
 				</div>
-				<a href="/2015/08/lesi/" class="full-box"></a>
+				<a href="/portfolio/" class="full-box"></a>
 			</div>
 			<div class="col-md-4">
 				<div class="dct">
 					<h5>Услуги и цены</h5>
 					<!--<p>г. Киев, проспект Краснозвездный,<br>119 оф. 144</p>-->
-					<a href="/obuchenie/" class="but-tn">подробнее</a>
+					<a href="/price/" class="but-tn">подробнее</a>
 				</div>
-				<a href="/obuchenie/" class="full-box"></a>
+				<a href="/price/" class="full-box"></a>
 			</div>
 		</div>
 
