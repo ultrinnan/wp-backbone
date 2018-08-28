@@ -8,11 +8,13 @@
                     <div class="clearfix" style="margin: 8px; padding: 8px;">
                         <h2><strong><?php the_title(); ?></strong></h2>
                         <div>
-                            <img style="max-width: 200px; float: left; margin: 0 24px 24px 0;" src="<?php the_post_thumbnail_url(); ?>">
+                            <a href="<?php the_permalink(); ?> ">
+                                <img style="max-width: 200px; float: left; margin: 0 24px 24px 0;" src="<?php the_post_thumbnail_url(); ?>">
+                            </a>
                         </div>
-                        <?php the_content(); ?>
+                        <?php the_excerpt(); ?>
                         <a href="<?php the_permalink(); ?> ">
-                            <span>Read more</span>
+                            <span>Подробнее</span>
                         </a>
                     </div>
                 <?php endwhile; endif; ?>

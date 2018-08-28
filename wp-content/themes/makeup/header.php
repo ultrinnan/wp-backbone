@@ -39,6 +39,8 @@
 			<?php get_search_form(); ?>
 		</div>
 		<a href="<?=get_home_url();?>" class="logo">MakeUp by Margaret</a>
+        <div class="mobile_menu"></div>
+        <div class="mobile_mask"></div>
         <?php wp_nav_menu([
             'theme_location' => 'header',
             'menu_class' => 'main-nav',
