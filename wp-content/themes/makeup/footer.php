@@ -16,7 +16,7 @@
 						<a href="https://fedirko.pro">FEDIRKO.PRO <?=date('Y');?></a>
 					</div>
 				</div>
-				<div class="col-sm-4 col-md-4 social-badges">
+				<div class="col-sm-4 col-md-4 fb">
                     <div class="fb-group" data-href="https://www.facebook.com/groups/makeupbymargaret/" data-width="280" data-show-social-context="true" data-show-metadata="false"></div>
 
 			</div>
