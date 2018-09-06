@@ -6,7 +6,7 @@
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
 	<meta name="viewport" content="width=device-width" />
-	<title><?php wp_title('«', true, 'right'); ?> <?php bloginfo('name'); ?></title>
+	<title><?php wp_title('«', true, 'right'); ?> <?php ('name'); ?></title>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css' />
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700,300italic&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css' />
 	<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
